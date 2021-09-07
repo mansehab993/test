@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/w3.css">
+    <title>Login - W3Schools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+h3 {
+    width: 97%;
+    display: inline-block;
+    font-size: 27px;
+    font-weight: bolder;
+}
+p.x {
+    display: inline-block;
+    width: 3%;
+    position: relative;
+    top: -5px;
+}
+.login {
+    display: flex;
+    justify-content: space-between;
+}
+.needacc {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 300px;
+    font-size: 13px;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: #04aa6d;
+
+}
+label {
+    display: block;
+    font-weight: bolder;
+
+}
+div.email {
+    margin-top: -30px;
+    margin-top: -30px;
+    margin-bottom: 8px;
+
+}
+
+input {
+    width: calc(100%);
+    display: flex;
+    place-content: center;
+    height: 35px;
+    border: 1px solid #00000038;
+    border-radius: 4px;
+
+
+}
+.password {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.password p {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    width: 100%;
+    height: 5px;
+    margin-bottom: -4px;
+    
+}
+.password button {
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+}
+div .login {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 45px;
+    color: white;
+    background-color: #04aa6d;
+    border-color: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+}
+div .forgot {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+
+
+}
+div.forgot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.help {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-color: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: #04aa6d;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 13px;
+}
+.logo {
+    display: none;
+}
+
+@media (min-width: 480px) {
+    .container {
+        width: 477px;
+        border: 1px solid #00000013;
+        border-radius: 8px;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 50px;
+    }
+    body {
+        display: grid;
+        place-content: center;
+
+    }
+    p.x {
+        display: none;
+    }
+    .logo img {
+        width: 50px;
+        height: 50px;
+    
+    }
+    .logo {
+        position: absolute;
+        display: initial;
+    }
+}
+
+  </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/2175px-W3Schools_logo.svg.png" alt="">
+        <span></span>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h3>Log in</h3>
+            <p class="x">&#10005;</p>
+        </div>
+        <div class="needacc"><p>Need an account?  <a href="">Sign Up</a></p></div>
+        <form action="">
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="password">
+                <p>&#128065;<button>Show</button></p>
+                <label for="password">Password</label>
+
+                <input type="password" id="password">
+
+            </div>
+        </form>
+        <div>
+            <button class="login">Log In</button>
+        </div>
+        <div class="forgot">
+            <a class="forgot" href="">Forget Password?</a>
+        </div>
+        <button class="help">? Help</button>
+        <footer>© 1999 - 2021 W3schools. All rights reserved. Cookie policy, Privacy and Terms.</footer>
+    </div>
+</body>
+</html>
